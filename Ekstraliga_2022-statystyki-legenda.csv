@@ -1,0 +1,72 @@
+Statystyki Ekstraligi 2022,,,
+,"pod zakładkami ""batting stats"" i ""pitching stats"" widnieje dostęp do statystyk odpowiednio pałkarzy i miotaczy z całego sezonu EL",,
+,"zakładki ""batting game logs"" i ""pitching game logs"" zawierają poszczególne mecze rozgrywane przez zawodników",,
+,Statystyki obejmują cały sezon zasadniczy oraz playoffy ,,
+LEGENDA:,,autor arkusza: Bartosz Tramś (specjalne podziękowania dla Mateusza Szustka za wykrycie błędu w liczeniu niepełnych zmian),
+pałkarze,po angielsku,,
+G,games,rozegrane mecze,
+PA,plate appearances,wszystkie podejścia do pałki,
+AB,at bats,"podejścia do pałki nie licząc walków, hit by pitchy, poświęceń",
+R,runs,obiegi,
+H,hits,hity,
+B,bunt hits,hity po buntach,
+1B,singles,,
+2B,doubles,,
+3B,triples,,
+HR,home runs,,
+RBI,runs batted in,pałkarze wbici,
+AVG,batting average,średnia,H/AB
+BB,walks,bazy darmo,
+SO,strikeouts,strikeouty,
+HBP,hit by pitches,,
+SB,stolen bases,ukradzione bazy,
+CS,caught stealings,nieudane próby kradzenia,
+SCB,sacrifice bunts,bunty po którym biegacze przesuwają się o przynajmniej jedną bazę,
+SF,sacrifice flies,flyouty po których biegacz zdobywa obieg,
+SAC,sacrifices,poświęcenia,SF+SCB
+OBP,on base percentage,"procent razy po których pałkarz dostaje się na przynajmniej pierwszą bazę, nie tylko poprzez hity",(H+BB+HBP)/(H+BB+HBP+SF)
+SLG,slugging percentage,"im większy, tym więcej powera ma dany pałkarz",(1B+2*2B+3*3B+4*HR)/AB
+ROE,reached on errors,"ilość razy, po których pałkarz dostaje się na przynajmniej pierwszą bazę po błędzie w obronie przeciwnika",
+FC,fielder choices,"ilość razy, po których pałkarz dostaje się na przynajmnije pierwszą bazę, gdy po uderzeniu został wyoutowany (lub powinienbył być wyoutowany) inny biegacz",
+GDP,grounded into double plays,ilość razy gdy po uderzeniach po ziemi pałkarza przeciwnicy zdobywają dwa outy,
+GTP,grounded into triple plays,ilość razy gdy po uderzeniach po ziemi pałkarza przeciwnicy zdobywają trzy outy,
+OPS,on base plus slugging,najlepsza dostępna statystyka do oceny pałkarzy - bierze pod uwagę dostawanie się na pierwszą bazę i odbijanie za dużo baz,OBP+SLG
+OPS+,on base plus slugging+,"powyższa statystyka ""zneutralizowana"" - gdy ktoś ma 130 OPS+, oznacza to że jest o 30% lepszy od średniego pałkarza ekstraligi, 65 OPS+ oznacza że jest o 35% gorszy",
+wOBA,weighted on base average,"wersja OBP, w której specyficzne wagi przypisane są poszczególnym typom dostania się na pierwszą bazę",
+wRC+,weighted runs created +,"powyższa statystyka ""zneutralizowana"" - patrz OPS+",
+,,,
+miotacz,,,
+G,games,ilość meczy w których wystąpił miotacz,
+W,wins,,
+L,losses,,
+SV,saves,,
+ST,games started,mecze rozpoczęte,
+CMP,complete games,mecze skończone,
+IP,innings pitched,ilość inningów rzuconych,
+BF,batters faced,ilosć pałkarzy do których rzucał miotacz,
+PIT,pitches,(niekompletne) ilość narzutów,
+R,runs,ilosć oddanych runów,
+RA7,run average per 7,"średnia runów na 7 inningowy mecz - jeżeli miotacz rzucałby 7 inningów, tyle oddałby w nich runów",7*R/IP
+RA,run average,"średnia runów na 9 inningowy mecz - jeżeli miotacz rzucałby 9 inningów, tyle oddałby w nich runów",9*R/IP
+ER,earned runs,ilość oddanych runów nie po błędach w obronie kolegów z drużyny,
+ERA7,earned run average per 7,średnia runów nie po errorach na 7 inningów - patrz RA,7*ER/IP
+ERA,earned run average,średnia runów nie po errorach na 9 inningów - patrz RA,9*ER/IP
+K,strikeouts,ilość strikeoutów rzuconych,
+H,hits,ilość oddanych hitów,
+BB,walks,ilość oddanych walków,
+K/BB,strikeout to walk ratio,stosunek strikeoutów do walków,K/BB
+K/7,strikeouts per 7,średnia strikeoutów na 7 inningów  - patrz RA,7*K/IP
+BB/7,walks per 7,średnia walków na 7 inningów  - patrz RA,7*BB/IP
+H/7,hits per 7,średnia hitów na 7 inningów - patrz RA,7*H/IP
+K/9,strikeouts per 9,średnia strikeoutów na 9 inningów  - patrz RA,9*K/IP
+BB/9,walks per 9,średnia walków na 9 inningów  - patrz RA,9*BB/IP
+H/9,hits per 9,średnia hitów na 9 inningów - patrz RA,9*H/IP
+HB,hit by pitches,ilość trafionych narzutami przeciwników,
+BK,balks,ilość walków,
+WP,wild pitches,ilość dzikich narzutów,
+HR,home runs allowed,ilość oddanych home runów,
+OBP,on base percentage against,patrz OBP dla pałkarzy,
+WHIP,walks + hits per innings pitched,"walki plus hity na rzucone inningi - ilość biegaczy oddanych przez miotacza na inning. około 1 to dobrze, mniej niż 1 świetnie, 1.75 i więcej to źle",(BB+H)/IP
+ERA+,earned run average +,patrz OPS+,
+RA+,run average +,patrz OPS+,
+FIP,fielding independent pitching,"statystyka biorąca pod uwagę jedynie BB, K, HR - w teorii jedyne rzeczy pod kompletną kontrolą miotacza. należy odczytywać ją jako odpowiednik ERA",
